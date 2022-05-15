@@ -1,0 +1,110 @@
+import React from 'react'
+
+import './Form.scss'
+
+const Form = () => {
+	return (
+		<div className='Form'>
+			<div className='Form_inner'>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+				<div>1</div>
+			</div>
+		</div>
+	)
+}
+
+export default Form

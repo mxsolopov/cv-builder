@@ -1,0 +1,15 @@
+@import '../../assets/scss/variables/colors.scss';
+
+.Form {
+	background-color: $neutral-10;
+	width: 100%;
+	max-width: 100%;
+	flex: 1 1 0%;
+	height: 100%;
+
+	&_inner {
+		flex: 1 1 0%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

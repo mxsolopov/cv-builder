@@ -1,1 +1,24 @@
+@import './variables/colors.scss';
 
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	width: 50%;
+	min-height: 100vh;
+}
+
+@media (min-width: 1280px) {
+	.wrapper {
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 1279px) {
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+}

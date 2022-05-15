@@ -1,0 +1,17 @@
+@import '../../assets/scss/variables/colors.scss';
+
+.Preview {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 50%;
+	flex: 1 1 0%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+	background-color: $neutral-60;
+	user-select: none;
+	z-index: 3;
+}
