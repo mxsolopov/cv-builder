@@ -1,9 +1,7 @@
-@import './variables/colors.scss';
+@import './variables.scss';
+@import './icons.scss';
 
-* {
-	box-sizing: border-box;
-}
-
+// Wrapper of main blocks
 .wrapper {
 	display: flex;
 	width: 50%;
@@ -21,4 +19,11 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+}
+
+// Desktop preview button
+.mobile-preview-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
