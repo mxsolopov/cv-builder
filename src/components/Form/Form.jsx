@@ -8,6 +8,7 @@ const Form = () => {
 	return (
 		<div className='Form'>
 			<div className='Form_inner'>
+				<h1 className='h1'>Заголовок</h1>
 				<Button
 					type='primary'
 					size='normal'
