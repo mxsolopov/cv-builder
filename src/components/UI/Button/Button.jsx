@@ -10,6 +10,7 @@ const Button = ({
 	textcontent = false,
 	disabled = false,
 	addClasses = [],
+	handler,
 }) => {
 	const typeClass = `Button_${type}`
 	const sizeClass = `Button_${size}`
@@ -17,7 +18,7 @@ const Button = ({
 	let btnClass = classNames('Button', typeClass, sizeClass, ...addClasses)
 
 	return (
-		<button className={btnClass} disabled={disabled}>
+		<button className={btnClass} disabled={disabled} onClick={handler}>
 			{textcontent ? (
 				<div className='Button_textcontent'>{textcontent}</div>
 			) : (

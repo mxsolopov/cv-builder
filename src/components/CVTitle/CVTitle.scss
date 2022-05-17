@@ -5,4 +5,16 @@
 	align-items: center;
 	gap: 24px;
 	align-self: center;
+	margin-top: 20px;
+
+	h2 {
+		margin: 0;
+	}
+
+	input {
+		border: none;
+		outline: none;
+		padding: 0;
+		border-bottom: 2px solid $neutral-80;
+	}
 }
