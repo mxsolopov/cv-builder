@@ -15,43 +15,32 @@
 	&[disabled] {
 		cursor: default;
 
-		.Button_textcontent,
-		i.Button_icon {
+		.textcontent,
+		.icon {
 			color: $neutral-50;
 		}
 	}
 
-	i.Button_icon {
-		display: inline-block;
-		font: normal normal normal 1em/1 'Phosphor';
-		color: inherit;
-		flex-shrink: 0;
-		text-transform: none;
-		/* Better Font Rendering */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
 	&_normal {
-		.Button_textcontent {
+		.textcontent {
 			font-family: 'Inter', sans-serif;
 			font-size: 14px;
 			font-weight: 500;
 			line-height: 20px;
 		}
-		i.Button_icon::before {
+		.icon::before {
 			font-size: 16px;
 		}
 	}
 
 	&_large {
-		.Button_textcontent {
+		.textcontent {
 			font-family: 'Inter', sans-serif;
 			font-size: 16px;
 			font-weight: 500;
 			line-height: 24px;
 		}
-		i.Button_icon::before {
+		.icon::before {
 			font-size: 20px;
 		}
 	}
@@ -81,8 +70,8 @@
 			background-color: $neutral-20;
 		}
 
-		.Button_textcontent,
-		i.Button_icon {
+		.textcontent,
+		.icon {
 			color: $neutral-10;
 		}
 	}
@@ -91,15 +80,15 @@
 		background-color: $primary-bg;
 
 		&:hover {
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-hover;
 			}
 		}
 
 		&:active {
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-pressed;
 			}
 		}
@@ -107,8 +96,8 @@
 		&:focus {
 			outline: 2px solid $primary-focus;
 
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-main;
 			}
 		}
@@ -122,8 +111,8 @@
 			background-color: $neutral-20;
 		}
 
-		.Button_textcontent,
-		i.Button_icon {
+		.textcontent,
+		.icon {
 			color: $primary-main;
 		}
 	}
@@ -134,16 +123,16 @@
 
 		&:hover {
 			outline-color: $primary-hover;
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-hover;
 			}
 		}
 
 		&:active {
 			outline-color: $primary-pressed;
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-pressed;
 			}
 		}
@@ -161,8 +150,8 @@
 			background-color: $neutral-20;
 		}
 
-		.Button_textcontent,
-		i.Button_icon {
+		.textcontent,
+		.icon {
 			color: $primary-main;
 		}
 	}
@@ -171,15 +160,15 @@
 		background: none;
 
 		&:hover {
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-hover;
 			}
 		}
 
 		&:active {
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-pressed;
 			}
 		}
@@ -187,8 +176,8 @@
 		&:focus {
 			outline: 2px solid $primary-focus;
 
-			.Button_textcontent,
-			i.Button_icon {
+			.textcontent,
+			.icon {
 				color: $primary-main;
 			}
 		}
@@ -202,8 +191,8 @@
 			background-color: $neutral-20;
 		}
 
-		.Button_textcontent,
-		i.Button_icon {
+		.textcontent,
+		.icon {
 			color: $primary-main;
 		}
 	}

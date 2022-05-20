@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Profile.scss'
 import Input from '../UI/Input'
+import AvatarUpload from '../UI/AvatarUpload'
 import BlockTitle from '../BlockTitle'
 // import classNames from 'classnames'
 
@@ -14,16 +15,11 @@ const Profile = () => {
 					label='На какую должность претендуете'
 					placeholder='Менеджер по продажам'
 				/>
+				<AvatarUpload />
 			</div>
 			<div className='row'>
-				<Input
-					label='На какую должность претендуете'
-					placeholder='Менеджер по продажам'
-				/>
-				<Input
-					label='На какую должность претендуете'
-					placeholder='Менеджер по продажам'
-				/>
+				<Input label='Фамилия' placeholder='Иванов' />
+				<Input label='Имя' placeholder='Иван' />
 			</div>
 		</div>
 	)

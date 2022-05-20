@@ -19,12 +19,8 @@ const Button = ({
 
 	return (
 		<button className={btnClass} disabled={disabled} onClick={handler}>
-			{textcontent ? (
-				<div className='Button_textcontent'>{textcontent}</div>
-			) : (
-				<></>
-			)}
-			{icon ? <i className={classNames('Button_icon', icon)}></i> : <></>}
+			{textcontent ? <div className='textcontent'>{textcontent}</div> : <></>}
+			{icon ? <i className={classNames('icon', icon)}></i> : <></>}
 		</button>
 	)
 }

@@ -7,6 +7,7 @@
 	font-weight: 500;
 	font-size: 36px;
 	line-height: 44px;
+	margin: 0;
 
 	@media (max-width: 1279px) {
 		font-size: 32px;
@@ -19,6 +20,7 @@
 	font-weight: 500;
 	font-size: 28px;
 	line-height: 36px;
+	margin: 0;
 
 	@media (max-width: 1279px) {
 		font-size: 25px;
@@ -31,6 +33,7 @@
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 28px;
+	margin: 0;
 
 	@media (max-width: 1279px) {
 		font-size: 18px;
@@ -76,6 +79,17 @@
 
 .medium-text {
 	font-weight: 500;
+}
+
+i {
+	display: inline-block;
+	font: normal normal normal 1em/1 'Phosphor';
+	color: inherit;
+	flex-shrink: 0;
+	text-transform: none;
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 // Wrapper of main blocks

@@ -10,5 +10,7 @@ export { default as Profile } from './Profile'
 // controls:
 export { default as Button } from './UI/Button'
 export { default as Input } from './UI/Input'
+export { default as AvatarUpload } from './UI/AvatarUpload'
+export { default as InfoIcon } from './UI/InfoIcon'
 
 // layouts:
