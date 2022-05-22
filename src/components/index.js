@@ -4,6 +4,7 @@ export { default as Preview } from './Preview'
 export { default as CVTitle } from './CVTitle'
 export { default as BlockTitle } from './BlockTitle'
 export { default as Profile } from './Profile'
+export { default as BirthDate } from './BirthDate'
 
 // UI components:
 
@@ -12,5 +13,6 @@ export { default as Button } from './UI/Button'
 export { default as Input } from './UI/Input'
 export { default as AvatarUpload } from './UI/AvatarUpload'
 export { default as InfoIcon } from './UI/InfoIcon'
+export { default as Select } from './UI/Select'
 
 // layouts:

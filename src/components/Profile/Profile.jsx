@@ -4,6 +4,7 @@ import './Profile.scss'
 import Input from '../UI/Input'
 import AvatarUpload from '../UI/AvatarUpload'
 import BlockTitle from '../BlockTitle'
+import BirthDate from '../BirthDate'
 // import classNames from 'classnames'
 
 const Profile = () => {
@@ -21,6 +22,7 @@ const Profile = () => {
 				<Input label='Фамилия' placeholder='Иванов' />
 				<Input label='Имя' placeholder='Иван' />
 			</div>
+			<BirthDate />
 		</div>
 	)
 }

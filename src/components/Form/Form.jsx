@@ -7,7 +7,7 @@ import { CVTitle, Profile } from '../../components'
 const Form = () => {
 	return (
 		<div className='Form'>
-			<div className='Form_inner'>
+			<div className='inner'>
 				<CVTitle />
 				<Profile />
 			</div>
