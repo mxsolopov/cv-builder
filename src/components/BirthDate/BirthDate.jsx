@@ -5,11 +5,23 @@ import './BirthDate.scss'
 // import classNames from 'classnames'
 
 const BirthDate = () => {
+	const generateSelectData = (values, labels) => {
+		const arr = []
+		if (values.length === labels.length) {
+			for (let i = 0; i < values.length; i++) {
+				const obj = { value: values[i], label: labels[i] }
+				arr.push(obj)
+			}
+		}
+		return arr
+	}
+
 	const [date, setDate] = React.useState({
 		day: undefined,
 		month: undefined,
 		year: undefined,
 	})
+
 	const now = new Date()
 	const range = (N, start) => Array.from({ length: N }, (v, k) => k + start)
 	const years = range(83, now.getFullYear() - 100)
@@ -30,20 +42,47 @@ const BirthDate = () => {
 		'декабря',
 	]
 
-	const generateSelectData = (values, labels) => {
-		const arr = []
-		if (values.length === labels.length) {
-			for (let i = 0; i < values.length; i++) {
-				const obj = { value: values[i], label: labels[i] }
-				arr.push(obj)
+	const [daysData, setDaysData] = React.useState(generateSelectData(days, days))
+
+	// Обработка несуществующих дат
+	React.useEffect(() => {
+		const checkLeapYear = () => {
+			if (
+				(0 === +date.year % 4 && 0 !== +date.year % 100) ||
+				0 === +date.year % 400
+			) {
+				return 29
+			} else {
+				return 28
 			}
 		}
-		return arr
-	}
 
-	React.useEffect(() => {
-		console.log(true)
-	}, [date])
+		const monthLengthsArr = [
+			31,
+			checkLeapYear(),
+			31,
+			30,
+			31,
+			30,
+			31,
+			31,
+			30,
+			31,
+			30,
+			31,
+		]
+
+		const monthLength = monthLengthsArr[date.month]
+
+		if (monthLength && monthLength !== daysData.length) {
+			const updDays = range(monthLength, 1)
+			setDaysData(generateSelectData(updDays, updDays))
+
+			if (date.day > monthLength) {
+				setDate({ ...date, day: updDays[updDays.length - 1] })
+			}
+		}
+	}, [daysData, date])
 
 	return (
 		<div className='BirthDate'>
@@ -51,7 +90,7 @@ const BirthDate = () => {
 				<Select
 					label='Дата рождения'
 					placeholder='День'
-					values={generateSelectData(days, days)}
+					values={daysData}
 					value={date.day}
 					handler={e => setDate({ ...date, day: e.target.value })}
 				/>
