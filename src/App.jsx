@@ -15,7 +15,17 @@ const App = () => {
 		<div className='wrapper'>
 			<Form />
 			{isDesktopOrLaptop && <Preview />}
-			{isTabletOrMobile && <Button />}
+			{isTabletOrMobile && (
+				<Button
+					type='primary'
+					size='large'
+					icon='ph-file-pdf'
+					textcontent={false}
+					disabled={false}
+					addClasses={['Button_onlyicon', 'mobile-preview-button']}
+					// handler={() => {}}
+				/>
+			)}
 		</div>
 	)
 }

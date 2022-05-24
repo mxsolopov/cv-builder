@@ -112,15 +112,14 @@ i {
 	}
 }
 
-// Desktop preview button
-.mobile-preview-button {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-}
-
 .row {
 	display: flex;
 	gap: 30px;
 	margin-bottom: 20px;
+}
+
+.row-column-wrap {
+	@media (max-width: 1279px) {
+		flex-direction: column;
+	}
 }
