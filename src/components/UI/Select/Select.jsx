@@ -11,7 +11,7 @@ const Select = ({ label, placeholder, value, values, handler }) => {
 			) : (
 				<></>
 			)}
-			<select value={value} onChange={handler}>
+			<select className='text-md' value={value} onChange={handler}>
 				<option defaultValue hidden>
 					{placeholder}
 				</option>

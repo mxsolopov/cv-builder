@@ -116,10 +116,20 @@ i {
 	display: flex;
 	gap: 30px;
 	margin-bottom: 20px;
+
+	@media (max-width: 1279px) {
+		margin-bottom: 15px;
+		gap: 15px;
+	}
 }
 
 .row-column-wrap {
 	@media (max-width: 1279px) {
 		flex-direction: column;
 	}
+}
+
+.white-text,
+.white-text .icon {
+	color: $neutral-10 !important;
 }

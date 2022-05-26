@@ -196,10 +196,14 @@
 			color: $primary-main;
 		}
 	}
+}
 
-	&_onlyicon {
-		padding: 8px;
-	}
+.Button_normal.Button_onlyicon {
+	padding: 8px;
+}
+
+.Button_large.Button_onlyicon {
+	padding: 10px;
 }
 
 // Desktop preview button
