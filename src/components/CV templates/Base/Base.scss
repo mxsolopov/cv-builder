@@ -11,23 +11,89 @@
 	&::before {
 		content: '';
 		display: block;
-		width: 15%;
+		width: 35%;
 		height: 5%;
-		background-color: blue;
+		background-color: #264061;
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
 
+	&::after {
+		content: '';
+		display: block;
+		width: 65%;
+		height: 5%;
+		background-color: #264061;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
 	.side {
 		flex-basis: 35%;
-		height: 100px;
-		background-color: lightgray;
+
+		.base-name {
+			font-size: 2vh;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-top: 1.5vh;
+		}
+
+		.base-birth {
+			font-size: 1.15vh;
+			margin-top: 0.5vh;
+			color: gray;
+		}
+
+		.base-avatar {
+			width: 50%;
+			padding-top: 50%;
+			border-radius: 60%;
+			background-color: gray;
+		}
+
+		.base-job {
+			margin-top: 1.5vh;
+
+			.label {
+				font-size: 1.2vh;
+				margin-bottom: 0.2em;
+			}
+
+			.descr {
+				font-size: 1.5vh;
+				font-weight: 700;
+			}
+		}
+
+		.base-contacts {
+			margin-top: 3vh;
+
+			.title {
+				font-size: 1.5vh;
+				font-weight: 700;
+				padding-bottom: 0.3em;
+				border-bottom: 1px solid black;
+			}
+		}
+
+		.contact-item {
+			margin-top: 1vh;
+		}
+
+		.label {
+			font-size: 1.2vh;
+			margin-bottom: 0.2em;
+		}
+
+		.descr {
+			font-size: 1.2vh;
+			font-weight: 700;
+		}
 	}
 
 	.main {
 		flex-basis: 65%;
-		height: 100px;
-		background-color: lightseagreen;
 	}
 }

@@ -90,7 +90,11 @@ const BirthDate = () => {
 		dispatch(
 			editItem({
 				item: 'birth',
-				value: { day: date.day, month: date.month, year: date.year },
+				value: {
+					day: date.day,
+					month: String(+date.month + 1),
+					year: date.year,
+				},
 			})
 		)
 	}, [daysData, date, dispatch])
