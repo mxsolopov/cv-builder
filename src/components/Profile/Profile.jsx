@@ -1,11 +1,7 @@
 import React from 'react'
 
 import './Profile.scss'
-import Field from '../UI/Field'
-import AvatarUpload from '../UI/AvatarUpload'
-import BlockTitle from '../BlockTitle'
-import BirthDate from '../BirthDate'
-import Button from '../UI/Button'
+import { Field, AvatarUpload, BlockTitle, BirthDate, Button } from '../'
 import classNames from 'classnames'
 
 const Profile = () => {

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Form.scss'
 
-import { CVTitle, Profile } from '../../components'
+import { CVTitle, Profile } from '../'
 
 const Form = () => {
 	return (

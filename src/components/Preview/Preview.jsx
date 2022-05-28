@@ -1,12 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 import './Preview.scss'
-import Button from '../UI/Button'
 import classNames from 'classnames'
+import { Base, Button } from '../'
 
 const Preview = () => {
-	const editedResume = useSelector(state => state.editedResume.editedResume)
+	// const editedResume = useSelector(state => state.editedResume.editedResume)
 
 	return (
 		<div className='Preview'>
@@ -42,21 +42,8 @@ const Preview = () => {
 				</div>
 			</div>
 			<div className='document-wrapper'>
-				<div className='document'>
-					<div>{editedResume.job}</div>
-					<div>{editedResume.name}</div>
-					<div>{editedResume.surname}</div>
-					<div>
-						{editedResume.birth.day}
-						{editedResume.birth.month ? '-' : ''}
-						{editedResume.birth.month}
-						{editedResume.birth.year ? '-' : ''}
-						{editedResume.birth.year}
-					</div>
-					<div>{editedResume.email}</div>
-					<div>{editedResume.phone}</div>
-					<div>{editedResume.country}</div>
-					<div>{editedResume.city}</div>
+				<div className='document-box'>
+					<Base />
 				</div>
 				<div className='navigation'>
 					<Button

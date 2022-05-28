@@ -1,0 +1,33 @@
+@import '../../../assets/scss/variables.scss';
+
+.Base {
+	height: 70vh;
+	width: 49.49vh;
+	background-color: $neutral-10;
+	padding: 10% 5%;
+	position: relative;
+	display: flex;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 15%;
+		height: 5%;
+		background-color: blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.side {
+		flex-basis: 35%;
+		height: 100px;
+		background-color: lightgray;
+	}
+
+	.main {
+		flex-basis: 65%;
+		height: 100px;
+		background-color: lightseagreen;
+	}
+}

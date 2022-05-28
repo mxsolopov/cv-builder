@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './CVTitle.scss'
-import Button from '../UI/Button'
+import { Button } from '../'
 import classNames from 'classnames'
 
 const CVTitle = () => {

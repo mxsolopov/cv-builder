@@ -1,8 +1,8 @@
 import React from 'react'
 import classNames from 'classnames'
 import thumbnail from '../../../assets/img/user-thumbnail.png'
-import InfoIcon from '../InfoIcon'
-import Button from '../Button'
+
+import { InfoIcon, Button } from '../../'
 
 import './AvatarUpload.scss'
 
