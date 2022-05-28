@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import initReducer from './initSlice'
+import editedResumeReducer from './editedResumeSlice'
 
 export default configureStore({
 	reducer: {
-		init: initReducer,
+		editedResume: editedResumeReducer,
 	},
 })

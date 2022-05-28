@@ -1,10 +1,14 @@
 import React from 'react'
 import Select from '../UI/Select'
+import { editItem } from '../../store/editedResumeSlice'
+import { useDispatch } from 'react-redux'
 
 import './BirthDate.scss'
 // import classNames from 'classnames'
 
 const BirthDate = () => {
+	const dispatch = useDispatch()
+
 	const generateSelectData = (values, labels) => {
 		const arr = []
 		if (values.length === labels.length) {
@@ -82,7 +86,14 @@ const BirthDate = () => {
 				setDate({ ...date, day: updDays[updDays.length - 1] })
 			}
 		}
-	}, [daysData, date])
+
+		dispatch(
+			editItem({
+				item: 'birth',
+				value: { day: date.day, month: date.month, year: date.year },
+			})
+		)
+	}, [daysData, date, dispatch])
 
 	return (
 		<div className='BirthDate'>

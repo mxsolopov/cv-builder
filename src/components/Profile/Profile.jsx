@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Profile.scss'
-import Input from '../UI/Input'
+import Field from '../UI/Field'
 import AvatarUpload from '../UI/AvatarUpload'
 import BlockTitle from '../BlockTitle'
 import BirthDate from '../BirthDate'
@@ -15,25 +15,26 @@ const Profile = () => {
 		<div className='Profile'>
 			<BlockTitle content='Персональная информация' />
 			<div className={classNames('row', 'row-column-wrap')}>
-				<Input
+				<Field
 					label='На какую должность претендуете'
 					placeholder='Менеджер по продажам'
+					item='job'
 				/>
 				<AvatarUpload />
 			</div>
 			<div className={classNames('row', 'row-column-wrap')}>
-				<Input label='Фамилия' placeholder='Иванов' />
-				<Input label='Имя' placeholder='Иван' />
+				<Field label='Фамилия' placeholder='Иванов' item='surname' />
+				<Field label='Имя' placeholder='Иван' item='name' />
 			</div>
 			<BirthDate />
 			<div className={classNames('row', 'row-column-wrap')}>
-				<Input label='E-mail' placeholder='login@example.com' />
-				<Input label='Телефон' placeholder='+7(XXX)XXX-XX-XX' />
+				<Field label='E-mail' placeholder='login@example.com' item='email' />
+				<Field label='Телефон' placeholder='+7(XXX)XXX-XX-XX' item='phone' />
 			</div>
 			{address ? (
 				<div className={classNames('row', 'row-column-wrap')}>
-					<Input label='Страна' placeholder='Россия' />
-					<Input label='Город' placeholder='Москва' />
+					<Field label='Страна' placeholder='Россия' item='country' />
+					<Field label='Город' placeholder='Москва' item='city' />
 				</div>
 			) : (
 				<></>
