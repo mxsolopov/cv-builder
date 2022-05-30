@@ -16,6 +16,7 @@ const editedResumeSlice = createSlice({
 			phone: '',
 			country: '',
 			city: '',
+			summary: '',
 		},
 	},
 	reducers: {

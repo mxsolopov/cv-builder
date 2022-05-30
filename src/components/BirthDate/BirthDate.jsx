@@ -92,7 +92,7 @@ const BirthDate = () => {
 				item: 'birth',
 				value: {
 					day: date.day,
-					month: String(+date.month + 1),
+					month: date.month,
 					year: date.year,
 				},
 			})

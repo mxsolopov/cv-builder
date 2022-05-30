@@ -8,7 +8,7 @@ const Base = () => {
 	const editedResume = useSelector(state => state.editedResume.editedResume)
 
 	const addZero = num => {
-		if (+num < 10) {
+		if (num < 10) {
 			return 0 + num
 		} else {
 			return num
@@ -25,7 +25,9 @@ const Base = () => {
 				<div className='base-birth'>
 					{addZero(editedResume.birth.day)}
 					{editedResume.birth.month ? '-' : ''}
-					{addZero(editedResume.birth.month)}
+					{!isNaN(editedResume.birth.month)
+						? addZero(String(+editedResume.birth.month + 1))
+						: ''}
 					{editedResume.birth.year ? '-' : ''}
 					{editedResume.birth.year}
 				</div>
@@ -36,7 +38,11 @@ const Base = () => {
 					<div className='descr'>{editedResume.job}</div>
 				</div>
 				<div className='base-contacts'>
-					<div className='title'>Контакты</div>
+					{editedResume.email !== '' || editedResume.phone !== '' ? (
+						<div className='base-title'>Контакты</div>
+					) : (
+						<></>
+					)}
 					{editedResume.email !== '' ? (
 						<div className='contact-item'>
 							<div className='label'>Email</div>
@@ -65,16 +71,18 @@ const Base = () => {
 					)}
 				</div>
 			</div>
-			<div className='main'></div>
-			{/* <div></div>
-			<div>{editedResume.surname}</div>
-			<div>
-				
+			<div className='main'>
+				<div className='base-summary'>
+					{editedResume.summary !== '' ? (
+						<>
+							<div className='base-title'>Характеристика</div>
+							<p className='base-text'>{editedResume.summary}</p>
+						</>
+					) : (
+						''
+					)}
+				</div>
 			</div>
-			<div>{editedResume.email}</div>
-			<div>{editedResume.phone}</div>
-			<div>{editedResume.country}</div>
-			<div>{editedResume.city}</div> */}
 		</div>
 	)
 }

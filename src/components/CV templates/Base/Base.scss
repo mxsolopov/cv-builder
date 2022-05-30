@@ -30,6 +30,18 @@
 		bottom: 0;
 	}
 
+	.base-title {
+		font-size: 1.5vh;
+		font-weight: 700;
+		padding-bottom: 0.3em;
+		border-bottom: 1px solid black;
+	}
+
+	.base-text {
+		font-size: 1vh;
+		font-weight: 400;
+	}
+
 	.side {
 		flex-basis: 35%;
 
@@ -69,13 +81,6 @@
 
 		.base-contacts {
 			margin-top: 3vh;
-
-			.title {
-				font-size: 1.5vh;
-				font-weight: 700;
-				padding-bottom: 0.3em;
-				border-bottom: 1px solid black;
-			}
 		}
 
 		.contact-item {
