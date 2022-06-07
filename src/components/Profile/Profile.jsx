@@ -10,27 +10,35 @@ const Profile = () => {
 	return (
 		<div className='Profile'>
 			<BlockTitle content='Персональная информация' />
-			<div className={classNames('row', 'row-column-wrap')}>
+			<div className={classNames('row-30', 'row-column-wrap')}>
 				<Field
-					label='На какую должность претендуете'
+					label='Искомая должность'
 					placeholder='Менеджер по продажам'
-					item='job'
+					singleItem='job'
 				/>
 				<AvatarUpload />
 			</div>
-			<div className={classNames('row', 'row-column-wrap')}>
-				<Field label='Фамилия' placeholder='Иванов' item='surname' />
-				<Field label='Имя' placeholder='Иван' item='name' />
+			<div className={classNames('row-30', 'row-column-wrap')}>
+				<Field label='Фамилия' placeholder='Иванов' singleItem='surname' />
+				<Field label='Имя' placeholder='Иван' singleItem='name' />
 			</div>
 			<BirthDate />
-			<div className={classNames('row', 'row-column-wrap')}>
-				<Field label='E-mail' placeholder='login@example.com' item='email' />
-				<Field label='Телефон' placeholder='+7(XXX)XXX-XX-XX' item='phone' />
+			<div className={classNames('row-30', 'row-column-wrap')}>
+				<Field
+					label='E-mail'
+					placeholder='login@example.com'
+					singleItem='email'
+				/>
+				<Field
+					label='Телефон'
+					placeholder='+7(XXX)XXX-XX-XX'
+					singleItem='phone'
+				/>
 			</div>
 			{address ? (
-				<div className={classNames('row', 'row-column-wrap')}>
-					<Field label='Страна' placeholder='Россия' item='country' />
-					<Field label='Город' placeholder='Москва' item='city' />
+				<div className={classNames('row-30', 'row-column-wrap')}>
+					<Field label='Страна' placeholder='Россия' singleItem='country' />
+					<Field label='Город' placeholder='Москва' singleItem='city' />
 				</div>
 			) : (
 				<></>

@@ -1,11 +1,11 @@
 import classNames from 'classnames'
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { editItem } from '../../../store/editedResumeSlice'
+import { editItem, editObjItem } from '../../../store/editedResumeSlice'
 
 import './Field.scss'
 
-const Field = ({ label, placeholder, item }) => {
+const Field = ({ label, placeholder, singleItem, objArr, objItem, objId }) => {
 	const dispatch = useDispatch()
 
 	return (
@@ -15,7 +15,16 @@ const Field = ({ label, placeholder, item }) => {
 				className='text-md'
 				placeholder={placeholder}
 				onChange={e => {
-					dispatch(editItem({ item: item, value: e.target.value }))
+					singleItem
+						? dispatch(editItem({ item: singleItem, value: e.target.value }))
+						: dispatch(
+								editObjItem({
+									objArr: objArr,
+									id: objId,
+									item: objItem,
+									value: e.target.value,
+								})
+						  )
 				}}
 			/>
 		</div>

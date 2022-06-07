@@ -6,6 +6,8 @@ export { default as BlockTitle } from './BlockTitle'
 export { default as Profile } from './Profile'
 export { default as Summary } from './Summary'
 export { default as BirthDate } from './BirthDate'
+export { default as Works } from './Works'
+export { default as WorkItem } from './WorkItem'
 
 // cv templates
 export { default as Base } from './CV templates/Base'

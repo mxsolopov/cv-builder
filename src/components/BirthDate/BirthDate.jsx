@@ -101,7 +101,7 @@ const BirthDate = () => {
 
 	return (
 		<div className='BirthDate'>
-			<div className='row'>
+			<div className='row-30'>
 				<Select
 					label='Дата рождения'
 					placeholder='День'
