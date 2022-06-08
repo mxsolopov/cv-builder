@@ -46,7 +46,14 @@ const Works = () => {
 					dispatch(
 						addObjItem({
 							item: 'jobs',
-							obj: { id: id, organisation: '', site: '', post: '', city: '' },
+							obj: {
+								id: id,
+								organisation: '',
+								site: '',
+								post: '',
+								city: '',
+								period: '',
+							},
 						})
 					)
 				}}

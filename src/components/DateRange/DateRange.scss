@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables.scss';
+
+.DateRange {
+	.period-item {
+		display: flex;
+		gap: 15px;
+		flex-basis: 50%;
+		position: relative;
+	}
+
+	.date-range-inner {
+		align-items: flex-end;
+
+		@media (max-width: 1279px) {
+			align-items: stretch;
+			gap: 0px;
+		}
+	}
+
+	.start-time-wrap,
+	.end-time-wrap {
+		flex-basis: 50%;
+	}
+
+	.end-time-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current-working {
+		margin-bottom: 10px;
+
+		@media (max-width: 1279px) {
+		}
+	}
+}

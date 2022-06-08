@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { removeObjItem } from '../../store/editedResumeSlice'
 import './WorkItem.scss'
-import { Button, Field } from '..'
+import { Button, Field, DateRange } from '..'
 import classNames from 'classnames'
 import { useSelector } from 'react-redux'
 
@@ -84,6 +84,7 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 						objId={id}
 					/>
 				</div>
+				<DateRange id={id} />
 			</div>
 		</div>
 	)
