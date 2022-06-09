@@ -1,0 +1,39 @@
+@import '../../assets/scss/variables.scss';
+
+.LinkItem {
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 1px solid $neutral-40;
+	border-radius: 4px;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.source {
+			color: $neutral-80;
+		}
+
+		.action-buttons {
+			display: flex;
+			gap: 10px;
+
+			.remove-btn {
+				background-color: $danger-bg;
+
+				.icon {
+					color: $danger-main;
+				}
+			}
+		}
+	}
+
+	.fields {
+		margin-top: 15px;
+	}
+
+	.fields-none {
+		display: none;
+	}
+}

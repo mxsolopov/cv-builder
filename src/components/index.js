@@ -10,6 +10,8 @@ export { default as Works } from './Works'
 export { default as WorkItem } from './WorkItem'
 export { default as Education } from './Education'
 export { default as EducationItem } from './EducationItem'
+export { default as Links } from './Links'
+export { default as LinkItem } from './LinkItem'
 export { default as DateRange } from './DateRange'
 
 // cv templates
