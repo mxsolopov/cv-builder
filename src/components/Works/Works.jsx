@@ -53,6 +53,7 @@ const Works = () => {
 								post: '',
 								city: '',
 								period: '',
+								description: '',
 							},
 						})
 					)

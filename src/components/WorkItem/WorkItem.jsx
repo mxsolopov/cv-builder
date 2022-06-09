@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { removeObjItem } from '../../store/editedResumeSlice'
 import './WorkItem.scss'
-import { Button, Field, DateRange } from '..'
+import { Button, Field, DateRange, TextAreaField } from '..'
 import classNames from 'classnames'
 import { useSelector } from 'react-redux'
 
@@ -10,14 +10,45 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 	const collapsed = worksCounter.find(item => item.id === id).collapsed
 	const job = useSelector(state => state.editedResume.editedResume).jobs.find(
 		job => job.id === id
-	).organisation
+	)
 	const dispatch = useDispatch()
+	const [currentWorking, setCurrentWorking] = React.useState(false)
+
+	const addZero = num => {
+		if (num < 10) {
+			return 0 + num
+		} else {
+			return num
+		}
+	}
 
 	return (
 		<div className='WorkItem'>
 			<div className='header'>
-				<div className={classNames('title', 'text-lg', 'medium-text')}>
-					{job !== '' ? job : 'Без названия'}
+				<div className='title-wrapper'>
+					<div className={classNames('title', 'text-lg', 'medium-text')}>
+						{job.organisation !== '' ? job.organisation : 'Без названия'}
+					</div>
+					<div className={classNames('range-label', 'text-sm')}>
+						{job.period.startMonth &&
+						job.period.startYear &&
+						job.period.endMonth &&
+						job.period.endYear
+							? job.period.endMonth === 'current' ||
+							  job.period.endYear === 'current'
+								? addZero(+job.period.startMonth + 1) +
+								  '/' +
+								  job.period.startYear +
+								  '-н.в.'
+								: addZero(+job.period.startMonth + 1) +
+								  '/' +
+								  job.period.startYear +
+								  '-' +
+								  addZero(+job.period.endMonth + 1) +
+								  '/' +
+								  job.period.endYear
+							: ''}
+					</div>
 				</div>
 				<div className='action-buttons'>
 					<Button
@@ -84,7 +115,21 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 						objId={id}
 					/>
 				</div>
-				<DateRange id={id} />
+				<DateRange
+					id={id}
+					item='jobs'
+					checkboxLabel='Работаю по настоящее время'
+					currentItem={currentWorking}
+					setCurrentItem={setCurrentWorking}
+				/>
+				<TextAreaField
+					label='Обязанности и достижения'
+					placeholder='Начните печатать'
+					rows='5'
+					objArr='jobs'
+					objItem='description'
+					objId={id}
+				/>
 			</div>
 		</div>
 	)

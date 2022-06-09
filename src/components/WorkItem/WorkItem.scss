@@ -11,6 +11,10 @@
 		justify-content: space-between;
 		align-items: center;
 
+		.range-label {
+			color: $neutral-80;
+		}
+
 		.action-buttons {
 			display: flex;
 			gap: 10px;

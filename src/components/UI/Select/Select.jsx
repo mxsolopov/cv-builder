@@ -3,7 +3,14 @@ import React from 'react'
 
 import './Select.scss'
 
-const Select = ({ label, placeholder, value, values, handler }) => {
+const Select = ({
+	label,
+	placeholder,
+	value,
+	values,
+	handler,
+	disabled = false,
+}) => {
 	return (
 		<div className='Select'>
 			{label ? (
@@ -11,7 +18,12 @@ const Select = ({ label, placeholder, value, values, handler }) => {
 			) : (
 				<></>
 			)}
-			<select className='text-md' value={value} onChange={handler}>
+			<select
+				className='text-md'
+				value={value}
+				onChange={handler}
+				disabled={disabled}
+			>
 				<option defaultValue hidden>
 					{placeholder}
 				</option>

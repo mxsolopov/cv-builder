@@ -10,6 +10,7 @@
 
 	.date-range-inner {
 		align-items: flex-end;
+		margin-bottom: 0;
 
 		@media (max-width: 1279px) {
 			align-items: stretch;
@@ -27,7 +28,7 @@
 		flex-direction: column;
 	}
 
-	.current-working {
+	.current-item {
 		margin-bottom: 10px;
 
 		@media (max-width: 1279px) {

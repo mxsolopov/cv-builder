@@ -7,7 +7,13 @@ import './DateRange.scss'
 import classNames from 'classnames'
 // import classNames from 'classnames'
 
-const DateRange = ({ id }) => {
+const DateRange = ({
+	id,
+	item,
+	checkboxLabel,
+	currentItem,
+	setCurrentItem,
+}) => {
 	const dispatch = useDispatch()
 
 	const generateSelectData = (values, labels) => {
@@ -27,7 +33,6 @@ const DateRange = ({ id }) => {
 		endMonth: undefined,
 		endYear: undefined,
 	})
-	const [currentWorking, setCurrentWorking] = React.useState(false)
 
 	const now = new Date()
 	const range = (N, start) => Array.from({ length: N }, (v, k) => k + start)
@@ -49,15 +54,18 @@ const DateRange = ({ id }) => {
 	]
 
 	React.useEffect(() => {
+		if (currentItem) {
+			setDate({ ...date, endMonth: 'current', endYear: 'current' })
+		}
 		dispatch(
 			editObjItem({
-				objArr: 'jobs',
+				objArr: item,
 				id: id,
 				item: 'period',
 				value: date,
 			})
 		)
-	}, [id, date, dispatch])
+	}, [id, date, dispatch, item, currentItem])
 
 	return (
 		<div className='DateRange'>
@@ -81,10 +89,10 @@ const DateRange = ({ id }) => {
 				</div>
 				<div className='end-time-wrap'>
 					<Checkbox
-						label='Работаю по настоящее время'
-						checked={currentWorking}
-						setChecked={setCurrentWorking}
-						customClass='current-working'
+						label={checkboxLabel}
+						checked={currentItem}
+						setChecked={setCurrentItem}
+						customClass='current-item'
 					/>
 					<div className='row-15'>
 						<Select
@@ -92,12 +100,14 @@ const DateRange = ({ id }) => {
 							values={generateSelectData(months, monthsLabels)}
 							value={date.endMonth}
 							handler={e => setDate({ ...date, endMonth: e.target.value })}
+							disabled={currentItem ? true : false}
 						/>
 						<Select
 							placeholder='Год'
 							values={generateSelectData(years, years)}
 							value={date.endYear}
 							handler={e => setDate({ ...date, endYear: e.target.value })}
+							disabled={currentItem ? true : false}
 						/>
 					</div>
 				</div>

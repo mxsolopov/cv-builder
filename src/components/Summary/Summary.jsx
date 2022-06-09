@@ -13,7 +13,11 @@ const Summary = () => {
 				читателя! Упомяните свою роль, опыт и самое главное - свои самые большие
 				достижения, лучшие качества и навыки.
 			</p>
-			<TextAreaField placeholder='Начните печатать' item='summary' rows='5' />
+			<TextAreaField
+				placeholder='Начните печатать'
+				singleItem='summary'
+				rows='5'
+			/>
 		</div>
 	)
 }

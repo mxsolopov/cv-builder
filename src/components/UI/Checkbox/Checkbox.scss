@@ -54,11 +54,13 @@
 	content: '';
 	display: block;
 	position: absolute;
-	top: 2px;
-	left: 6px;
-	width: 4px;
+	top: 5.5px;
+	left: 4px;
+	width: 10px;
 	height: 10px;
-	border: solid $primary-main;
-	border-width: 0 2px 2px 0;
-	transform: rotate(45deg);
+	border-radius: 2px;
+	background-color: $primary-main;
+	// border: solid $primary-main;
+	// border-width: 0 2px 2px 0;
+	// transform: rotate(45deg);
 }
