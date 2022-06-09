@@ -53,6 +53,10 @@ const DateRange = ({
 		'декабрь',
 	]
 
+	// const objItem = useSelector(state => state.editedResume.editedResume)[
+	// 	item
+	// ].find(objItem => objItem.id === id)
+
 	React.useEffect(() => {
 		if (currentItem) {
 			setDate({ ...date, endMonth: 'current', endYear: 'current' })

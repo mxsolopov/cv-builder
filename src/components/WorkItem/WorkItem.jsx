@@ -16,7 +16,7 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 
 	const addZero = num => {
 		if (num < 10) {
-			return 0 + num
+			return '0' + num
 		} else {
 			return num
 		}
@@ -39,11 +39,11 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 								? addZero(+job.period.startMonth + 1) +
 								  '/' +
 								  job.period.startYear +
-								  '-н.в.'
+								  ' - н.в.'
 								: addZero(+job.period.startMonth + 1) +
 								  '/' +
 								  job.period.startYear +
-								  '-' +
+								  ' - ' +
 								  addZero(+job.period.endMonth + 1) +
 								  '/' +
 								  job.period.endYear

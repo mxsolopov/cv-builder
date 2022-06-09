@@ -31,7 +31,11 @@ const editedResumeSlice = createSlice({
 			const editedItem = state.editedResume[action.payload.objArr].find(
 				obj => obj.id === action.payload.id
 			)
-			editedItem[action.payload.item] = action.payload.value
+			if (editedItem) {
+				editedItem[action.payload.item] = action.payload.value
+			} else {
+				return
+			}
 		},
 		removeObjItem(state, action) {
 			state.editedResume[action.payload.objArr] = state.editedResume[
