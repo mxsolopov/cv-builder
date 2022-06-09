@@ -8,6 +8,8 @@ export { default as Summary } from './Summary'
 export { default as BirthDate } from './BirthDate'
 export { default as Works } from './Works'
 export { default as WorkItem } from './WorkItem'
+export { default as Education } from './Education'
+export { default as EducationItem } from './EducationItem'
 export { default as DateRange } from './DateRange'
 
 // cv templates

@@ -18,6 +18,7 @@ const editedResumeSlice = createSlice({
 			city: '',
 			summary: '',
 			jobs: [],
+			education: [],
 		},
 	},
 	reducers: {

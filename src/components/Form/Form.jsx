@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Form.scss'
 
-import { CVTitle, Profile, Summary, Works } from '../'
+import { CVTitle, Profile, Summary, Works, Education } from '../'
 
 const Form = () => {
 	return (
@@ -12,6 +12,7 @@ const Form = () => {
 				<Profile />
 				<Summary />
 				<Works />
+				<Education />
 			</div>
 		</div>
 	)
