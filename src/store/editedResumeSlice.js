@@ -20,6 +20,7 @@ const editedResumeSlice = createSlice({
 			jobs: [],
 			education: [],
 			links: [],
+			skills: [],
 		},
 	},
 	reducers: {

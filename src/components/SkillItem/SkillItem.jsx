@@ -1,27 +1,27 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { removeObjItem } from '../../store/editedResumeSlice'
-import './LinkItem.scss'
-import { Button, Field } from '..'
+import './SkillItem.scss'
+import { Button, Field, Slider } from '..'
 import classNames from 'classnames'
 import { useSelector } from 'react-redux'
 
-const LinkItem = ({ id, linksCounter, setLinksCounter }) => {
-	const collapsed = linksCounter.find(item => item.id === id).collapsed
-	const link = useSelector(state => state.editedResume.editedResume).links.find(
-		link => link.id === id
-	)
+const SkillItem = ({ id, skillsCounter, setSkillsCounter }) => {
+	const collapsed = skillsCounter.find(item => item.id === id).collapsed
+	const skill = useSelector(
+		state => state.editedResume.editedResume
+	).skills.find(skill => skill.id === id)
 	const dispatch = useDispatch()
 
 	return (
-		<div className='LinkItem'>
+		<div className='SkillItem'>
 			<div className='header'>
 				<div className='title-wrapper'>
 					<div className={classNames('title', 'text-lg', 'medium-text')}>
-						{link.label !== '' ? link.label : 'Без названия'}
+						{skill.name !== '' ? skill.name : 'Без названия'}
 					</div>
 					<div className={classNames('source', 'text-sm')}>
-						{link.source !== '' ? link.source : ''}
+						{skill.name !== '' ? skill.source : ''}
 					</div>
 				</div>
 				<div className='action-buttons'>
@@ -33,8 +33,10 @@ const LinkItem = ({ id, linksCounter, setLinksCounter }) => {
 						disabled={false}
 						addClasses={['Button_onlyicon', 'remove-btn']}
 						handler={() => {
-							dispatch(removeObjItem({ id: id, objArr: 'links' }))
-							setLinksCounter([...linksCounter.filter(item => item.id !== id)])
+							dispatch(removeObjItem({ id: id, objArr: 'skills' }))
+							setSkillsCounter([
+								...skillsCounter.filter(item => item.id !== id),
+							])
 						}}
 					/>
 					<Button
@@ -45,11 +47,11 @@ const LinkItem = ({ id, linksCounter, setLinksCounter }) => {
 						disabled={false}
 						addClasses={['Button_onlyicon']}
 						handler={() =>
-							setLinksCounter(
-								linksCounter.map(link =>
-									link.id === id
-										? { ...link, collapsed: !collapsed }
-										: { ...link, collapsed: true }
+							setSkillsCounter(
+								skillsCounter.map(skill =>
+									skill.id === id
+										? { ...skill, collapsed: !collapsed }
+										: { ...skill, collapsed: true }
 								)
 							)
 						}
@@ -59,23 +61,17 @@ const LinkItem = ({ id, linksCounter, setLinksCounter }) => {
 			<div className={classNames('fields', collapsed ? 'fields-none' : '')}>
 				<div className={classNames('row-15', 'row-column-wrap')}>
 					<Field
-						label='Метка'
-						placeholder='ВКонтакте'
-						objArr='links'
-						objItem='label'
+						label='Навык'
+						placeholder='Название навыка'
+						objArr='skills'
+						objItem='name'
 						objId={id}
 					/>
-					<Field
-						label='Ссылка'
-						placeholder='https://vk.com/xxxxxxx'
-						objArr='links'
-						objItem='source'
-						objId={id}
-					/>
+					<Slider />
 				</div>
 			</div>
 		</div>
 	)
 }
 
-export default LinkItem
+export default SkillItem

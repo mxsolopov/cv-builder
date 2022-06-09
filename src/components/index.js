@@ -12,6 +12,8 @@ export { default as Education } from './Education'
 export { default as EducationItem } from './EducationItem'
 export { default as Links } from './Links'
 export { default as LinkItem } from './LinkItem'
+export { default as Skills } from './Skills'
+export { default as SkillItem } from './SkillItem'
 export { default as DateRange } from './DateRange'
 
 // cv templates
@@ -27,5 +29,6 @@ export { default as AvatarUpload } from './UI/AvatarUpload'
 export { default as InfoIcon } from './UI/InfoIcon'
 export { default as Select } from './UI/Select'
 export { default as Checkbox } from './UI/Checkbox'
+export { default as Slider } from './UI/Slider'
 
 // layouts:
