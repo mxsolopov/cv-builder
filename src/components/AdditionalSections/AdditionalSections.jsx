@@ -28,7 +28,7 @@ const AdditionalSections = () => {
 				<BlockTitle content='Дополнительные секции' />
 				<div className='buttons-wrap'>
 					<Button
-						type='secondary'
+						type={sections.courses ? 'primary' : 'secondary'}
 						size='normal'
 						icon={!sections.courses ? 'ph-plus' : 'ph-minus'}
 						textcontent='Обучающие курсы'
@@ -42,7 +42,7 @@ const AdditionalSections = () => {
 						}}
 					/>
 					<Button
-						type='secondary'
+						type={sections.recommendations ? 'primary' : 'secondary'}
 						size='normal'
 						icon={!sections.recommendations ? 'ph-plus' : 'ph-minus'}
 						textcontent='Рекомендации'
@@ -56,7 +56,7 @@ const AdditionalSections = () => {
 						}
 					/>
 					<Button
-						type='secondary'
+						type={sections.languages ? 'primary' : 'secondary'}
 						size='normal'
 						icon={!sections.languages ? 'ph-plus' : 'ph-minus'}
 						textcontent='Иностранные языки'
@@ -67,7 +67,7 @@ const AdditionalSections = () => {
 						}
 					/>
 					<Button
-						type='secondary'
+						type={sections.hobbies ? 'primary' : 'secondary'}
 						size='normal'
 						icon={!sections.hobbies ? 'ph-plus' : 'ph-minus'}
 						textcontent='Хобби'
