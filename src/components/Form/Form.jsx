@@ -10,10 +10,10 @@ const Form = () => {
 			<div className='inner'>
 				<CVTitle />
 				<Profile />
+				<Links />
 				<Summary />
 				<Works />
 				<Education />
-				<Links />
 				<Skills />
 			</div>
 		</div>
