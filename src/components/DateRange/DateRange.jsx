@@ -10,6 +10,7 @@ import classNames from 'classnames'
 const DateRange = ({
 	id,
 	item,
+	label,
 	checkboxLabel,
 	currentItem,
 	setCurrentItem,
@@ -53,10 +54,6 @@ const DateRange = ({
 		'декабрь',
 	]
 
-	// const objItem = useSelector(state => state.editedResume.editedResume)[
-	// 	item
-	// ].find(objItem => objItem.id === id)
-
 	React.useEffect(() => {
 		if (currentItem) {
 			setDate({ ...date, endMonth: 'current', endYear: 'current' })
@@ -78,7 +75,7 @@ const DateRange = ({
 			>
 				<div className={classNames('row-15', 'start-time-wrap')}>
 					<Select
-						label='Период работы'
+						label={label}
 						placeholder='Месяц'
 						values={generateSelectData(months, monthsLabels)}
 						value={date.startMonth}

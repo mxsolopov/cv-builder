@@ -118,6 +118,7 @@ const WorkItem = ({ id, worksCounter, setWorksCounter }) => {
 				<DateRange
 					id={id}
 					item='jobs'
+					label='Период работы'
 					checkboxLabel='Работаю по настоящее время'
 					currentItem={currentWorking}
 					setCurrentItem={setCurrentWorking}

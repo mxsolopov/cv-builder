@@ -106,6 +106,7 @@ const CourseItem = ({ id, coursesCounter, setCoursesCounter }) => {
 				<DateRange
 					id={id}
 					item='courses'
+					label='Период прохождения'
 					checkboxLabel='Обучаюсь по настоящее время'
 					currentItem={currentCourse}
 					setCurrentItem={setCurrentCourse}

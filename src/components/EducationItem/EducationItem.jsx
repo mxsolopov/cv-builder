@@ -115,6 +115,7 @@ const EducationItem = ({ id, educationCounter, setEducationCounter }) => {
 				<DateRange
 					id={id}
 					item='education'
+					label='Период обучения'
 					checkboxLabel='Обучаюсь по настоящее время'
 					currentItem={currentEducation}
 					setCurrentItem={setCurrentEducation}
