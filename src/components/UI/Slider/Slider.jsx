@@ -1,34 +1,45 @@
 import classNames from 'classnames'
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { editItem, editObjItem } from '../../../store/editedResumeSlice'
+import { editObjItem } from '../../../store/editedResumeSlice'
 
 import './Slider.scss'
 
-const Slider = ({ label, placeholder, singleItem, objArr, objItem, objId }) => {
+const Slider = ({ objArr, objItem, objId }) => {
 	const dispatch = useDispatch()
+
+	const [value, setValue] = React.useState('0')
+	const skillLabels = [
+		'Новичок',
+		'Начинающий',
+		'Базовый',
+		'Продвинутый',
+		'Профессионал',
+		'Эксперт',
+	]
 
 	return (
 		<div className='Slider'>
-			{/* <div className={classNames('label', 'text-lg')}>{label}</div>
+			<div className={classNames('label', 'text-md')}>{skillLabels[value]}</div>
 			<input
-				className='text-md'
-				placeholder={placeholder}
+				type='range'
+				min='0'
+				max='5'
+				step='1'
+				value={value}
 				onChange={e => {
-					singleItem
-						? dispatch(editItem({ item: singleItem, value: e.target.value }))
-						: dispatch(
-								editObjItem({
-									objArr: objArr,
-									id: objId,
-									item: objItem,
-									value: e.target.value,
-								})
-						  )
+					dispatch(
+						editObjItem({
+							objArr: objArr,
+							id: objId,
+							item: objItem,
+							value: skillLabels[e.target.value],
+						})
+					)
+					setValue(e.target.value)
 				}}
-			/> */}
-			<div className={classNames('label', 'text-md')}>Начинающий</div>
-			<input type='range' />
+				style={{ backgroundSize: `${20 * value}%` }}
+			/>
 		</div>
 	)
 }

@@ -21,7 +21,7 @@ const SkillItem = ({ id, skillsCounter, setSkillsCounter }) => {
 						{skill.name !== '' ? skill.name : 'Без названия'}
 					</div>
 					<div className={classNames('source', 'text-sm')}>
-						{skill.name !== '' ? skill.source : ''}
+						{skill.level !== '' ? skill.level : ''}
 					</div>
 				</div>
 				<div className='action-buttons'>
@@ -67,7 +67,7 @@ const SkillItem = ({ id, skillsCounter, setSkillsCounter }) => {
 						objItem='name'
 						objId={id}
 					/>
-					<Slider />
+					<Slider objArr='skills' objItem='level' objId={id} />
 				</div>
 			</div>
 		</div>
