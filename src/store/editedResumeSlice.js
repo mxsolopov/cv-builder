@@ -21,6 +21,10 @@ const editedResumeSlice = createSlice({
 			education: [],
 			links: [],
 			skills: [],
+			courses: [],
+			recommendations: [],
+			languages: [],
+			hobbies: [],
 		},
 	},
 	reducers: {
@@ -45,10 +49,18 @@ const editedResumeSlice = createSlice({
 				action.payload.objArr
 			].filter(item => item.id !== action.payload.id)
 		},
+		clearArrItem(state, action) {
+			state.editedResume[action.payload.item] = []
+		},
 	},
 })
 
-export const { removeObjItem, editItem, addObjItem, editObjItem } =
-	editedResumeSlice.actions
+export const {
+	removeObjItem,
+	editItem,
+	addObjItem,
+	editObjItem,
+	clearArrItem,
+} = editedResumeSlice.actions
 
 export default editedResumeSlice.reducer

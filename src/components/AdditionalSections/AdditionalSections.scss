@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables.scss';
+
+.AdditionalSections {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.buttons-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		gap: 20px;
+	}
+}

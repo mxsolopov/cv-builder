@@ -1,5 +1,6 @@
 // components:
 export { default as Form } from './Form'
+export { default as AdditionalSections } from './AdditionalSections'
 export { default as Preview } from './Preview'
 export { default as CVTitle } from './CVTitle'
 export { default as BlockTitle } from './BlockTitle'
@@ -14,6 +15,8 @@ export { default as Links } from './Links'
 export { default as LinkItem } from './LinkItem'
 export { default as Skills } from './Skills'
 export { default as SkillItem } from './SkillItem'
+export { default as Courses } from './Courses'
+export { default as CourseItem } from './CourseItem'
 export { default as DateRange } from './DateRange'
 
 // cv templates
