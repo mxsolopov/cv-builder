@@ -31,25 +31,8 @@ const CourseItem = ({ id, coursesCounter, setCoursesCounter }) => {
 					<div className={classNames('title', 'text-lg', 'medium-text')}>
 						{course.name !== '' ? course.name : 'Без названия'}
 					</div>
-					<div className={classNames('range-label', 'text-sm')}>
-						{course.period.startMonth &&
-						course.period.startYear &&
-						course.period.endMonth &&
-						course.period.endYear
-							? course.period.endMonth === 'current' ||
-							  course.period.endYear === 'current'
-								? addZero(+course.period.startMonth + 1) +
-								  '/' +
-								  course.period.startYear +
-								  ' - н.в.'
-								: addZero(+course.period.startMonth + 1) +
-								  '/' +
-								  course.period.startYear +
-								  ' - ' +
-								  addZero(+course.period.endMonth + 1) +
-								  '/' +
-								  course.period.endYear
-							: ''}
+					<div className={classNames('label', 'text-sm')}>
+						{course.organisation !== '' ? course.organisation : ''}
 					</div>
 				</div>
 				<div className='action-buttons'>
