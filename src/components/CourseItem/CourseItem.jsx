@@ -60,7 +60,7 @@ const CourseItem = ({ id, coursesCounter, setCoursesCounter }) => {
 				</div>
 			</div>
 			<div className={classNames('fields', collapsed ? 'fields-none' : '')}>
-				<div className='row-15'>
+				<div className={classNames('row-15', 'row-column-wrap')}>
 					<Field
 						label='Курс'
 						placeholder='Название курса'
