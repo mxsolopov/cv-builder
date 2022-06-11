@@ -3,9 +3,12 @@ import React from 'react'
 import './Profile.scss'
 import { Field, AvatarUpload, BlockTitle, BirthDate, Button } from '../'
 import classNames from 'classnames'
+import { useDispatch } from 'react-redux'
+import { clearItem } from '../../store/editedResumeSlice'
 
 const Profile = () => {
 	const [address, setAddress] = React.useState(false)
+	const dispatch = useDispatch()
 
 	return (
 		<div className='Profile'>
@@ -52,7 +55,13 @@ const Profile = () => {
 				}
 				disabled={false}
 				addClasses={[]}
-				handler={() => setAddress(!address)}
+				handler={() => {
+					setAddress(!address)
+					if (address) {
+						dispatch(clearItem({ item: 'country' }))
+						dispatch(clearItem({ item: 'city' }))
+					}
+				}}
 			/>
 		</div>
 	)
