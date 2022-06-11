@@ -52,6 +52,9 @@ const editedResumeSlice = createSlice({
 		clearArrItem(state, action) {
 			state.editedResume[action.payload.item] = []
 		},
+		clearItem(state, action) {
+			state.editedResume[action.payload.item] = ''
+		},
 	},
 })
 
@@ -61,6 +64,7 @@ export const {
 	addObjItem,
 	editObjItem,
 	clearArrItem,
+	clearItem,
 } = editedResumeSlice.actions
 
 export default editedResumeSlice.reducer

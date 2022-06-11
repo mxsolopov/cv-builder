@@ -48,7 +48,7 @@ const Profile = () => {
 				size='normal'
 				icon={!address ? 'ph-caret-down' : 'ph-caret-up'}
 				textcontent={
-					!address ? 'Добавить место проживания' : 'Скрыть место проживания'
+					!address ? 'Добавить место проживания' : 'Убрать место проживания'
 				}
 				disabled={false}
 				addClasses={[]}

@@ -1,9 +1,16 @@
 import React from 'react'
 
 import './AdditionalSections.scss'
-import { Button, BlockTitle, Courses, Recommendations, Languages } from '..'
+import {
+	Button,
+	BlockTitle,
+	Courses,
+	Recommendations,
+	Languages,
+	Hobbies,
+} from '..'
 import { useDispatch } from 'react-redux'
-import { clearArrItem } from '../../store/editedResumeSlice'
+import { clearArrItem, clearItem } from '../../store/editedResumeSlice'
 // import classNames from 'classnames'
 
 const AdditionalSections = () => {
@@ -22,7 +29,7 @@ const AdditionalSections = () => {
 				{sections.courses ? <Courses /> : <></>}
 				{sections.recommendations ? <Recommendations /> : <></>}
 				{sections.languages ? <Languages /> : <></>}
-				{sections.hobbies ? 'Хобби' : <></>}
+				{sections.hobbies ? <Hobbies /> : <></>}
 			</>
 			<div className='AdditionalSections'>
 				<BlockTitle content='Дополнительные секции' />
@@ -79,9 +86,12 @@ const AdditionalSections = () => {
 						textcontent='Хобби'
 						disabled={false}
 						addClasses={[]}
-						handler={() =>
+						handler={() => {
 							setSections({ ...sections, hobbies: !sections.hobbies })
-						}
+							if (sections.hobbies) {
+								dispatch(clearItem({ item: 'hobbies' }))
+							}
+						}}
 					/>
 				</div>
 			</div>

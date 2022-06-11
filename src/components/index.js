@@ -22,6 +22,7 @@ export { default as CourseItem } from './CourseItem'
 export { default as Recommendations } from './Recommendations'
 export { default as RecommendationItem } from './RecommendationItem'
 export { default as DateRange } from './DateRange'
+export { default as Hobbies } from './Hobbies'
 
 // cv templates
 export { default as Base } from './CV templates/Base'
