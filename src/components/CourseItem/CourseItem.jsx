@@ -14,16 +14,6 @@ const CourseItem = ({ id, coursesCounter, setCoursesCounter }) => {
 	const dispatch = useDispatch()
 	const [currentCourse, setCurrentCourse] = React.useState(false)
 
-	console.log(course)
-
-	const addZero = num => {
-		if (num < 10) {
-			return '0' + num
-		} else {
-			return num
-		}
-	}
-
 	return (
 		<div className='CourseItem'>
 			<div className='header'>

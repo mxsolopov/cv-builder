@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './AdditionalSections.scss'
-import { Button, BlockTitle, Courses } from '..'
+import { Button, BlockTitle, Courses, Recommendations } from '..'
 import { useDispatch } from 'react-redux'
 import { clearArrItem } from '../../store/editedResumeSlice'
 // import classNames from 'classnames'
@@ -20,7 +20,7 @@ const AdditionalSections = () => {
 		<>
 			<>
 				{sections.courses ? <Courses /> : <></>}
-				{sections.recommendations ? 'Рекомендации' : <></>}
+				{sections.recommendations ? <Recommendations /> : <></>}
 				{sections.languages ? 'Иностранные языки' : <></>}
 				{sections.hobbies ? 'Хобби' : <></>}
 			</>
@@ -48,12 +48,15 @@ const AdditionalSections = () => {
 						textcontent='Рекомендации'
 						disabled={false}
 						addClasses={[]}
-						handler={() =>
+						handler={() => {
 							setSections({
 								...sections,
 								recommendations: !sections.recommendations,
 							})
-						}
+							if (sections.recommendations) {
+								dispatch(clearArrItem({ item: 'recommendations' }))
+							}
+						}}
 					/>
 					<Button
 						type={sections.languages ? 'primary' : 'secondary'}

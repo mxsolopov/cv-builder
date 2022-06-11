@@ -17,6 +17,8 @@ export { default as Skills } from './Skills'
 export { default as SkillItem } from './SkillItem'
 export { default as Courses } from './Courses'
 export { default as CourseItem } from './CourseItem'
+export { default as Recommendations } from './Recommendations'
+export { default as RecommendationItem } from './RecommendationItem'
 export { default as DateRange } from './DateRange'
 
 // cv templates
