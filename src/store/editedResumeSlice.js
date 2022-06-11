@@ -24,7 +24,7 @@ const editedResumeSlice = createSlice({
 			courses: [],
 			recommendations: [],
 			languages: [],
-			hobbies: [],
+			hobbies: '',
 		},
 	},
 	reducers: {
