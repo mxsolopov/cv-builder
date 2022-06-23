@@ -1,6 +1,10 @@
 @import './variables.scss';
 @import './icons.scss';
 
+* {
+	box-sizing: border-box;
+}
+
 // Font styles
 .h1 {
 	font-family: 'Inter', sans-serif;

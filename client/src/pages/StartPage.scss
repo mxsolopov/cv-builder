@@ -1,0 +1,103 @@
+@import '../assets/scss/variables.scss';
+
+.StartPage {
+	height: 100vh;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 10vh;
+		padding-left: 5%;
+		padding-right: 5%;
+
+		.logo-wrapper {
+			width: 8%;
+
+			.logo {
+				width: 100%;
+			}
+		}
+
+		.buttons {
+			display: flex;
+			gap: 16px;
+		}
+	}
+	.cta {
+		height: 65vh;
+		padding-left: 12%;
+		padding-right: 12%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.cta-title {
+			width: 28%;
+
+			.title {
+				font-family: 'Inter';
+				font-weight: 500;
+				font-size: 1.9vw;
+				line-height: 120%;
+				color: $neutral-90;
+
+				span {
+					color: $primary-main;
+				}
+			}
+		}
+		.img-wrapper {
+			height: 65vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.img {
+				height: 85%;
+			}
+		}
+	}
+	.features {
+		height: 25vh;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.features-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+
+		.feature-item {
+			display: flex;
+			align-items: center;
+
+			.icon-box {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $primary-bg;
+				width: 6.5vw;
+				height: 6.5vw;
+				border-radius: 0.5vw;
+				margin-right: 0.8vw;
+
+				i:before {
+					font-size: 2.5vw;
+					color: $primary-main;
+				}
+			}
+
+			.feature-text {
+				color: $neutral-90;
+				font-family: 'Inter';
+				font-weight: 500;
+				font-size: 1vw;
+			}
+		}
+	}
+}
