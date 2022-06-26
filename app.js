@@ -1,8 +1,11 @@
 import express from 'express'
 import config from 'config'
 import mongoose from 'mongoose'
+import userRouter from './routes/userRouter.js'
 
 const app = express()
+
+app.use('/api/user', userRouter)
 
 const PORT = config.get('port') || 5000
 
