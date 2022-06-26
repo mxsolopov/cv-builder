@@ -1,0 +1,15 @@
+@import '../assets/scss/variables.scss';
+
+.Login {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.form-box {
+		padding: 40px;
+		border-radius: 10px;
+		width: 450px;
+		background-color: $neutral-10;
+	}
+}
