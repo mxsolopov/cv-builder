@@ -1,4 +1,5 @@
 {
 	"port": 5000,
+	"jwtSecret": "solopov cvbuilder",
 	"mongoUri": "mongodb+srv://mxsolopov:a4q-X8W-cYD-e48@cluster0.ee9b1.mongodb.net/?retryWrites=true&w=majority"
 }

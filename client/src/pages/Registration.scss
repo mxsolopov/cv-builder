@@ -1,6 +1,6 @@
 @import '../assets/scss/variables.scss';
 
-.Login {
+.Registration {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -29,7 +29,7 @@
 			flex-direction: column;
 			gap: 20px;
 
-			.login-btn .textcontent {
+			.reg-btn .textcontent {
 				margin: 0 auto;
 			}
 		}

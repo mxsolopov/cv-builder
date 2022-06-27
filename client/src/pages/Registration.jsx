@@ -2,17 +2,11 @@ import React from 'react'
 import classNames from 'classnames'
 import { Button } from '../components'
 import logo from '../assets/img/logo.svg'
-import './Login.scss'
+import './Registration.scss'
 
-const Login = () => {
-	const [form, setForm] = React.useState({ email: '', password: '' })
-
-	const changeHandler = e => {
-		setForm({ ...form, [e.target.name]: e.target.value })
-	}
-
+const Registration = () => {
 	return (
-		<div className='Login'>
+		<div className='Registration'>
 			<div className='form-box'>
 				<div className='logo-wrapper'>
 					<img src={logo} alt='logo' className='logo' />
@@ -28,9 +22,6 @@ const Login = () => {
 							name='email'
 							id='email'
 							placeholder='Введите email'
-							onChange={e => {
-								changeHandler(e)
-							}}
 						/>
 					</div>
 					<div>
@@ -46,27 +37,39 @@ const Login = () => {
 							name='password'
 							id='password'
 							placeholder='Введите пароль'
-							onChange={e => {
-								changeHandler(e)
-							}}
+						/>
+					</div>
+					<div>
+						<label
+							htmlFor='r-password'
+							className={classNames('label', 'text-lg')}
+						>
+							Повторите пароль
+						</label>
+						<input
+							className='text-md'
+							type='password'
+							name='r-password'
+							id='r-password'
+							placeholder='Введите пароль'
 						/>
 					</div>
 					<Button
 						type='primary'
 						size='large'
 						icon={false}
-						textcontent='Войти'
+						textcontent='Зарегистрироваться'
 						disabled={false}
-						addClasses={['login-btn']}
+						addClasses={['reg-btn']}
 						handler={() => {}}
 					/>
 					<Button
 						type='secondary'
 						size='large'
 						icon={false}
-						textcontent='Регистрация'
+						textcontent='Войти'
 						disabled={false}
-						addClasses={['login-btn']}
+						addClasses={['reg-btn']}
 						handler={() => {}}
 					/>
 				</div>
@@ -75,4 +78,4 @@ const Login = () => {
 	)
 }
 
-export default Login
+export default Registration
