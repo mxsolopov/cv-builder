@@ -1,0 +1,39 @@
+@import '../assets/scss/variables.scss';
+
+// Wrapper of main blocks
+.wrapper {
+	display: flex;
+	width: 50%;
+	min-height: 100vh;
+}
+
+@media (min-width: 1280px) {
+	.wrapper {
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 1279px) {
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.bottom-panel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $neutral-10;
+    padding: 15px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-preview-button {
+	transform: scale(1.25);
+	border-radius: 50%;
+}

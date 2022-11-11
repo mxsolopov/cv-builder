@@ -1,0 +1,10 @@
+@import '../../assets/scss/variables.scss';
+
+.BlockTitle {
+	.divider {
+		height: 1px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: $neutral-30;
+	}
+}

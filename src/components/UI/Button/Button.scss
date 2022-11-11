@@ -1,0 +1,207 @@
+@import "../../../assets/scss/variables.scss";
+
+.Button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:disabled,
+  &[disabled] {
+    cursor: default;
+
+    .textcontent,
+    .icon {
+      color: $neutral-50;
+    }
+  }
+
+  &_normal {
+    .textcontent {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    .icon::before {
+      font-size: 16px;
+    }
+  }
+
+  &_large {
+    .textcontent {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    .icon::before {
+      font-size: 20px;
+    }
+  }
+
+  &_primary {
+    background-color: $primary-main;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+
+    &:active {
+      background-color: $primary-pressed;
+    }
+
+    &:focus {
+      background-color: $primary-main;
+      outline: 2px solid $primary-focus;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $neutral-20;
+    }
+
+    .textcontent,
+    .icon {
+      color: $neutral-10;
+    }
+  }
+
+  &_secondary {
+    background-color: $primary-bg;
+
+    &:hover {
+      .textcontent,
+      .icon {
+        color: $primary-hover;
+      }
+    }
+
+    &:active {
+      .textcontent,
+      .icon {
+        color: $primary-pressed;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid $primary-focus;
+
+      .textcontent,
+      .icon {
+        color: $primary-main;
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $neutral-20;
+    }
+
+    .textcontent,
+    .icon {
+      color: $primary-main;
+    }
+  }
+
+  &_outline {
+    background-color: $primary-bg;
+    outline: 1px solid $primary-border;
+
+    &:hover {
+      outline-color: $primary-hover;
+      .textcontent,
+      .icon {
+        color: $primary-hover;
+      }
+    }
+
+    &:active {
+      outline-color: $primary-pressed;
+      .textcontent,
+      .icon {
+        color: $primary-pressed;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid $primary-focus;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $neutral-20;
+    }
+
+    .textcontent,
+    .icon {
+      color: $primary-main;
+    }
+  }
+
+  &_text {
+    background: none;
+
+    &:hover {
+      .textcontent,
+      .icon {
+        color: $primary-hover;
+      }
+    }
+
+    &:active {
+      .textcontent,
+      .icon {
+        color: $primary-pressed;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid $primary-focus;
+
+      .textcontent,
+      .icon {
+        color: $primary-main;
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $neutral-20;
+    }
+
+    .textcontent,
+    .icon {
+      color: $primary-main;
+    }
+  }
+}
+
+.Button_normal.Button_onlyicon {
+  padding: 8px;
+}
+
+.Button_large.Button_onlyicon {
+  padding: 10px;
+}

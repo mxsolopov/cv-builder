@@ -1,0 +1,44 @@
+@import '../../../assets/scss/variables.scss';
+
+.AvatarUpload {
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	input {
+		display: none;
+	}
+
+	.preview {
+		display: block;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		border: 1.5px solid $neutral-50;
+		cursor: pointer;
+	}
+
+	.upload-button {
+		display: inline-block;
+		padding: 8px 16px;
+		background-color: $primary-bg;
+		color: $primary-main;
+		border: 1px solid $primary-main;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.delete-button {
+		background-color: $danger-bg;
+		transition: all 0.3s ease;
+
+		.icon {
+			color: $danger-main;
+		}
+
+		&:hover .icon {
+			color: $danger-hover;
+		}
+	}
+}

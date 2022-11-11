@@ -1,0 +1,102 @@
+@import '../../../assets/scss/variables.scss';
+
+.Base {
+	background-color: $neutral-10;
+	padding: 10% 5%;
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	* {
+		word-break: break-all;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 35%;
+		height: 5%;
+		background-color: #264061;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		width: 65%;
+		height: 5%;
+		background-color: #264061;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.side {
+		width: 40%;
+	}
+
+	.main {
+		width: 60%;
+	}
+
+	.base-name {
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 0.5em;
+	}
+
+	.base-birth {
+		color: gray;
+		font-weight: 400;
+		margin-bottom: 0.5em;
+	}
+
+	.base-avatar {
+		width: 40%;
+		padding-top: 40%;
+		border-radius: 50%;
+		background-color: gray;
+	}
+
+	.section {
+		font-weight: 700;
+		margin-top: 0.8em;
+		margin-bottom: 0.6em;
+		padding-bottom: 0.2em;
+		margin-right: 1em;
+		border-bottom: 1px solid gray;
+	}
+
+	.text {
+		font-weight: 500;
+	}
+
+	.single-item {
+		font-weight: 700;
+		margin-top: 0.25em;
+		margin-bottom: 0.75em;
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skill {
+		margin-right: 5%;
+	}
+
+	.skill-level-bg {
+		background-color: $neutral-40;
+		border-radius: 99px;
+	}
+
+	.skill-level {
+		background-color: $info-main;
+		border-radius: 99px;
+		height: 100%;
+	}
+}

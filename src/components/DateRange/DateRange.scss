@@ -1,0 +1,84 @@
+@import '../../assets/scss/variables.scss';
+
+.DateRange {
+	.period-item {
+		display: flex;
+		gap: 15px;
+		flex-basis: 50%;
+		position: relative;
+	}
+
+	.date-range-inner {
+		align-items: flex-end;
+		margin-bottom: 0;
+
+		@media (max-width: 1279px) {
+			align-items: stretch;
+			gap: 0px;
+		}
+	}
+
+	.start-time-wrap,
+	.end-time-wrap {
+		flex-basis: 50%;
+	}
+
+	.end-time-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current-item {
+		margin-bottom: 10px;
+
+		@media (max-width: 1279px) {
+		}
+	}
+
+	.Checkbox {
+		input[type='checkbox'] {
+			clip: rect(0 0 0 0);
+			clip-path: inset(50%);
+			height: 1px;
+			overflow: hidden;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+	
+		.label {
+			color: $neutral-90;
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			display: flex;
+			align-items: center;
+	
+			&:active .checkbox {
+				outline: 2px solid $primary-focus;
+			}
+	
+			&:hover .checkbox {
+				border-color: $primary-hover;
+			}
+		}
+	
+		.checkbox {
+			box-sizing: border-box;
+			display: inline-block; // set to `inline-block` as `inline elements ignore `height` and `width`
+			height: 20px;
+			width: 20px;
+			background: $neutral-10;
+			border: 1px $neutral-50 solid;
+			border-radius: 4px;
+			margin-right: 10px;
+		}
+	
+		.checkbox-active {
+			border-color: $primary-main;
+			background: $primary-main;
+			box-shadow: inset -4px 0px 0px #ffffff, inset 4px 0px 0px #ffffff,
+				inset 0px -4px 0px #ffffff, inset 0px 4px 0px #ffffff;
+		}
+	}
+}

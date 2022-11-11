@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables.scss";
+
+.CVTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  input {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 0;
+    border-bottom: 2px solid $neutral-80;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+
+    @media (max-width: 1279px) {
+      font-size: 25px;
+    }
+  }
+}

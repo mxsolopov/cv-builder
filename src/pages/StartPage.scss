@@ -1,0 +1,171 @@
+@import '../assets/scss/variables.scss';
+
+.StartPage {
+	height: 100vh;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 10vh;
+		padding-left: 5%;
+		padding-right: 5%;
+
+		@media (max-width: 1279px) {
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.logo-wrapper {
+			width: 8%;
+
+			@media (max-width: 1279px) {
+				width: 26%;
+			}
+
+			.logo {
+				width: 100%;
+			}
+		}
+
+		.buttons {
+			display: flex;
+			gap: 16px;
+		}
+	}
+	.cta {
+		height: 65vh;
+		padding-left: 12%;
+		padding-right: 12%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 1279px) {
+			flex-direction: column;
+			height: auto;
+			margin-top: 40px;
+			gap: 40px;
+		}
+
+		.cta-title {
+			width: 28%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			@media (max-width: 1279px) {
+				width: 100%;
+				align-items: center;
+			}
+
+			.title {
+				font-family: 'Inter';
+				font-weight: 500;
+				font-size: 1.9vw;
+				line-height: 120%;
+				color: $neutral-90;
+
+				@media (max-width: 1279px) {
+					font-size: 26px;
+					text-align: center;
+				}
+
+				span {
+					color: $primary-main;
+				}
+			}
+		}
+		.img-wrapper {
+			height: 65vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: 1279px) {
+				height: auto;
+				width: 100%;
+			}
+
+			.img {
+				height: 85%;
+
+				@media (max-width: 1279px) {
+					height: auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.features {
+		height: 25vh;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 1279px) {
+			height: auto;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.features-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+
+			@media (max-width: 1279px) {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 20px;
+			}
+		}
+
+		.feature-item {
+			display: flex;
+			align-items: center;
+
+			.icon-box {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $primary-bg;
+				width: 6.5vw;
+				height: 6.5vw;
+				border-radius: 0.5vw;
+				margin-right: 0.8vw;
+
+				@media (max-width: 1279px) {
+					width: 80px;
+					height: 80px;
+					border-radius: 8px;
+					margin-right: 20px;
+				}
+
+				i:before {
+					font-size: 2.5vw;
+					color: $primary-main;
+
+					@media (max-width: 1279px) {
+						font-size: 32px;
+					}
+				}
+			}
+
+			.feature-text {
+				color: $neutral-90;
+				font-family: 'Inter';
+				font-weight: 500;
+				font-size: 1vw;
+
+				@media (max-width: 1279px) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

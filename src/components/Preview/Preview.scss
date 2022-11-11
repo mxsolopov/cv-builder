@@ -1,0 +1,71 @@
+@import "../../assets/scss/variables.scss";
+
+.Preview {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  background-color: $neutral-60;
+  user-select: none;
+  z-index: 3;
+
+  @media (max-width: 1279px) {
+		width: 100%;
+	}
+
+  .header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 15px;
+    left: 0;
+    padding: 0 50px;
+
+    @media (max-width: 1279px) {
+      padding: 0 20px;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .document-wrapper {
+    position: relative;
+  }
+
+  .document-box {
+    box-shadow: $shadow-8;
+  }
+
+  // .navigation {
+  // 	display: flex;
+  // 	gap: 20px;
+  // 	align-items: center;
+  // 	position: absolute;
+  // 	bottom: -40px;
+  // 	left: 50%;
+  // 	transform: translateX(-50%);
+  // }
+
+  span {
+    color: $neutral-10;
+  }
+
+  // .navigation-button {
+  // 	background: none !important;
+  // }
+
+  .mobile-save-btn {
+    position: absolute;
+    bottom: 20px;
+  }
+}
