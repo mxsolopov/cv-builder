@@ -1,7 +1,6 @@
 {
   "name": "cv-builder",
   "version": "0.1.0",
-  "homepage": "https://mxsolopov.github.io/cv-builder",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -26,9 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1"
   }
 }
