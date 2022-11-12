@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/cv-builder/static/css/main.e6af3d5c.css",
-    "main.js": "/cv-builder/static/js/main.aef38352.js",
-    "static/media/Phosphor.woff": "/cv-builder/static/media/Phosphor.8a892ed011457214b46a.woff",
-    "static/media/Phosphor.woff2": "/cv-builder/static/media/Phosphor.d002dd6e730f868cc0d5.woff2",
-    "static/media/Inter-Bold.woff": "/cv-builder/static/media/Inter-Bold.1e547cd04bfe2dae1f98.woff",
-    "static/media/Inter-SemiBold.woff": "/cv-builder/static/media/Inter-SemiBold.7f6c3678e245486167d9.woff",
-    "static/media/Inter-Medium.woff": "/cv-builder/static/media/Inter-Medium.44e343ff76a98508d309.woff",
-    "static/media/Inter-Regular.woff": "/cv-builder/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
-    "static/media/Inter-Bold.woff2": "/cv-builder/static/media/Inter-Bold.c08e610806161507e8e3.woff2",
-    "static/media/Inter-SemiBold.woff2": "/cv-builder/static/media/Inter-SemiBold.90f5c90fdecd8895f496.woff2",
-    "static/media/Inter-Medium.woff2": "/cv-builder/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
-    "static/media/Inter-Regular.woff2": "/cv-builder/static/media/Inter-Regular.bd097ceff83f90802a12.woff2",
-    "static/media/classic.jpg": "/cv-builder/static/media/classic.025c1699035eb52f6b13.jpg",
-    "static/media/cvimg.svg": "/cv-builder/static/media/cvimg.1366b3e797990fcbc65c580006c10c73.svg",
-    "static/media/base.jpg": "/cv-builder/static/media/base.bc68362891a0dc54f494.jpg",
-    "static/media/logo.svg": "/cv-builder/static/media/logo.49a2ea9a995c2ef4df30fa28422c059b.svg",
-    "static/media/cv-icon.svg": "/cv-builder/static/media/cv-icon.1a8c65bb12458654b19c1e4c6858251d.svg",
-    "index.html": "/cv-builder/index.html",
-    "main.e6af3d5c.css.map": "/cv-builder/static/css/main.e6af3d5c.css.map",
-    "main.aef38352.js.map": "/cv-builder/static/js/main.aef38352.js.map"
+    "main.css": "/static/css/main.5d0347ac.css",
+    "main.js": "/static/js/main.a6d94e9a.js",
+    "static/media/Phosphor.woff": "/static/media/Phosphor.8a892ed011457214b46a.woff",
+    "static/media/Phosphor.woff2": "/static/media/Phosphor.d002dd6e730f868cc0d5.woff2",
+    "static/media/Inter-Bold.woff": "/static/media/Inter-Bold.1e547cd04bfe2dae1f98.woff",
+    "static/media/Inter-SemiBold.woff": "/static/media/Inter-SemiBold.7f6c3678e245486167d9.woff",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.44e343ff76a98508d309.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
+    "static/media/Inter-Bold.woff2": "/static/media/Inter-Bold.c08e610806161507e8e3.woff2",
+    "static/media/Inter-SemiBold.woff2": "/static/media/Inter-SemiBold.90f5c90fdecd8895f496.woff2",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.bd097ceff83f90802a12.woff2",
+    "static/media/classic.jpg": "/static/media/classic.025c1699035eb52f6b13.jpg",
+    "static/media/cvimg.svg": "/static/media/cvimg.1366b3e797990fcbc65c580006c10c73.svg",
+    "static/media/base.jpg": "/static/media/base.bc68362891a0dc54f494.jpg",
+    "static/media/logo.svg": "/static/media/logo.49a2ea9a995c2ef4df30fa28422c059b.svg",
+    "static/media/cv-icon.svg": "/static/media/cv-icon.1a8c65bb12458654b19c1e4c6858251d.svg",
+    "index.html": "/index.html",
+    "main.5d0347ac.css.map": "/static/css/main.5d0347ac.css.map",
+    "main.a6d94e9a.js.map": "/static/js/main.a6d94e9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6af3d5c.css",
-    "static/js/main.aef38352.js"
+    "static/css/main.5d0347ac.css",
+    "static/js/main.a6d94e9a.js"
   ]
 }
