@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "../axios";
 import classNames from "classnames";
 import setCookie from "../functions/setCookie";
+import getCookie from "../functions/getCookie";
 import { updateDataStore } from "../store/resumeDataSlice";
 import { updateBaseStore } from "../store/resumeBaseSlice";
 import { useDispatch } from "react-redux";
@@ -61,7 +62,12 @@ const Dashboard = () => {
           },
         })
       );
-      await axios.post("/editor");
+      const resumeId = await axios.post("/editor", {
+        params: {
+          userId: getCookie("userId")
+        },
+      });
+      setCookie("resumeId", resumeId.data);
       dispatch(editItem({ item: "state", value: false }));
     } catch (error) {
       dispatch(editItem({ item: "state", value: false }));
@@ -70,6 +76,7 @@ const Dashboard = () => {
   };
 
   const deleteResumeHandler = async (userId, resumeId) => {
+    console.log(userId, resumeId);
     try {
       await axios.post("/delete", {
         params: {
@@ -89,7 +96,11 @@ const Dashboard = () => {
   const getResumes = async () => {
     try {
       setLoading(true);
-      const result = await axios.post("/dashboard");
+      const result = await axios.post("/dashboard", {
+        params: {
+          userId: getCookie("userId")
+        },
+      });
       setResumes(result.data);
       setLoading(false);
     } catch (e) {

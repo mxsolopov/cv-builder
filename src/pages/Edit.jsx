@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import axios from "../axios";
 import { editItem } from "../store/loaderSlice";
 import { useDispatch } from "react-redux";
+import getCookie from "../functions/getCookie";
 
 const Edit = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,8 @@ const Edit = () => {
         params: {
           resumeBase,
           resumeData,
+          userId: getCookie("userId"),
+          resumeId: getCookie("resumeId")
         },
       });
       dispatch(editItem({ item: "state", value: false }));
