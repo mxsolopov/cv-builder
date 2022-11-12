@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  // baseURL: "https://cv-builder-backend.onrender.com",
-  baseURL: "http://localhost:9000",
+  baseURL: "https://cv-builder-backend.onrender.com",
 });
 
 export default instance;

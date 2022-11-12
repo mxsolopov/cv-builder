@@ -1,176 +1,28 @@
-[debug] [2022-11-12T19:54:47.545Z] ----------------------------------------------------------------------
-[debug] [2022-11-12T19:54:47.547Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-11-12T19:54:47.548Z] CLI Version:   11.16.0
-[debug] [2022-11-12T19:54:47.548Z] Platform:      win32
-[debug] [2022-11-12T19:54:47.548Z] Node Version:  v16.16.0
-[debug] [2022-11-12T19:54:47.550Z] Time:          Sat Nov 12 2022 22:54:47 GMT+0300 (Москва, стандартное время)
-[debug] [2022-11-12T19:54:47.550Z] ----------------------------------------------------------------------
+[debug] [2022-11-12T20:15:00.776Z] ----------------------------------------------------------------------
+[debug] [2022-11-12T20:15:00.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-12T20:15:00.781Z] CLI Version:   11.16.0
+[debug] [2022-11-12T20:15:00.781Z] Platform:      win32
+[debug] [2022-11-12T20:15:00.782Z] Node Version:  v16.16.0
+[debug] [2022-11-12T20:15:00.783Z] Time:          Sat Nov 12 2022 23:15:00 GMT+0300 (Москва, стандартное время)
+[debug] [2022-11-12T20:15:00.784Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-11-12T19:54:47.555Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-12T19:54:47.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-12T19:54:47.689Z] > authorizing via signed-in user (mxsolopov@gmail.com)
-[debug] [2022-11-12T19:54:47.689Z] [iam] checking project cv-builder-d5607 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-11-12T19:54:47.691Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions [none]
-[debug] [2022-11-12T19:54:47.691Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions x-goog-quota-user=projects/cv-builder-d5607
-[debug] [2022-11-12T19:54:47.691Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-12T20:15:00.792Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-12T20:15:00.994Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-12T20:15:00.995Z] > authorizing via signed-in user (mxsolopov@gmail.com)
+[debug] [2022-11-12T20:15:00.995Z] [iam] checking project cv-builder-d5607 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-12T20:15:00.998Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions [none]
+[debug] [2022-11-12T20:15:00.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions x-goog-quota-user=projects/cv-builder-d5607
+[debug] [2022-11-12T20:15:00.999Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
 [warn] !  Unable to fetch the CLI MOTD and remote config. 
-[debug] [2022-11-12T19:54:48.204Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2022-11-12T19:54:50.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions 403
-[debug] [2022-11-12T19:54:50.101Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/cv-builder-d5607:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T19:54:50.101Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T19:54:50.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
-[debug] [2022-11-12T19:54:51.216Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
-[debug] [2022-11-12T19:54:51.216Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T19:54:51.216Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T19:54:51.218Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-    at RetryOperation._fn (C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[error] 
-[error] Error: Failed to get Firebase project cv-builder-d5607. Please make sure the project exists and your account has permission to access it.
-[debug] [2022-11-12T19:55:14.078Z] ----------------------------------------------------------------------
-[debug] [2022-11-12T19:55:14.081Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-11-12T19:55:14.081Z] CLI Version:   11.16.0
-[debug] [2022-11-12T19:55:14.081Z] Platform:      win32
-[debug] [2022-11-12T19:55:14.082Z] Node Version:  v16.16.0
-[debug] [2022-11-12T19:55:14.083Z] Time:          Sat Nov 12 2022 22:55:14 GMT+0300 (Москва, стандартное время)
-[debug] [2022-11-12T19:55:14.084Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2022-11-12T19:55:14.090Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-12T19:55:14.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-12T19:55:14.226Z] > authorizing via signed-in user (mxsolopov@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  E:\Projects\Frontend\cv-builder\cv-builder-frontend
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[warn] !  Unable to fetch the CLI MOTD and remote config. 
-[debug] [2022-11-12T19:55:14.756Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2022-11-12T19:55:33.320Z] Using project from CLI flag: cv-builder-d5607
-[debug] [2022-11-12T19:55:33.321Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
-[debug] [2022-11-12T19:55:34.384Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
-[debug] [2022-11-12T19:55:34.384Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T19:55:34.385Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T19:55:34.386Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-    at RetryOperation._fn (C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[error] 
-[error] Error: Failed to get Firebase project cv-builder-d5607. Please make sure the project exists and your account has permission to access it.
-[debug] [2022-11-12T20:00:09.947Z] ----------------------------------------------------------------------
-[debug] [2022-11-12T20:00:09.950Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-11-12T20:00:09.950Z] CLI Version:   11.16.0
-[debug] [2022-11-12T20:00:09.950Z] Platform:      win32
-[debug] [2022-11-12T20:00:09.950Z] Node Version:  v16.16.0
-[debug] [2022-11-12T20:00:09.952Z] Time:          Sat Nov 12 2022 23:00:09 GMT+0300 (Москва, стандартное время)
-[debug] [2022-11-12T20:00:09.953Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2022-11-12T20:00:09.958Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-12T20:00:10.093Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-12T20:00:10.093Z] > authorizing via signed-in user (mxsolopov@gmail.com)
-[debug] [2022-11-12T20:00:10.094Z] [iam] checking project cv-builder-d5607 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-11-12T20:00:10.095Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions [none]
-[debug] [2022-11-12T20:00:10.095Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions x-goog-quota-user=projects/cv-builder-d5607
-[debug] [2022-11-12T20:00:10.095Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[warn] !  Unable to fetch the CLI MOTD and remote config. 
-[debug] [2022-11-12T20:00:10.371Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2022-11-12T20:00:10.465Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions 403
-[debug] [2022-11-12T20:00:10.465Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/cv-builder-d5607:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T20:00:10.465Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T20:00:10.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
-[debug] [2022-11-12T20:00:10.788Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
-[debug] [2022-11-12T20:00:10.788Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T20:00:10.789Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T20:00:11.115Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-    at RetryOperation._fn (C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[error] 
-[error] Error: Failed to get Firebase project cv-builder-d5607. Please make sure the project exists and your account has permission to access it.
-[debug] [2022-11-12T20:00:34.087Z] ----------------------------------------------------------------------
-[debug] [2022-11-12T20:00:34.092Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-11-12T20:00:34.093Z] CLI Version:   11.16.0
-[debug] [2022-11-12T20:00:34.093Z] Platform:      win32
-[debug] [2022-11-12T20:00:34.093Z] Node Version:  v16.16.0
-[debug] [2022-11-12T20:00:34.095Z] Time:          Sat Nov 12 2022 23:00:34 GMT+0300 (Москва, стандартное время)
-[debug] [2022-11-12T20:00:34.095Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2022-11-12T20:00:34.099Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-12T20:00:34.231Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-12T20:00:34.232Z] > authorizing via signed-in user (mxsolopov@gmail.com)
-[debug] [2022-11-12T20:00:34.232Z] [iam] checking project cv-builder-d5607 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-11-12T20:00:34.233Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions [none]
-[debug] [2022-11-12T20:00:34.234Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions x-goog-quota-user=projects/cv-builder-d5607
-[debug] [2022-11-12T20:00:34.234Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[warn] !  Unable to fetch the CLI MOTD and remote config. 
-[debug] [2022-11-12T20:00:34.340Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2022-11-12T20:00:34.496Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions 403
-[debug] [2022-11-12T20:00:34.497Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/cv-builder-d5607:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T20:00:34.497Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T20:00:34.499Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
-[debug] [2022-11-12T20:00:34.820Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
-[debug] [2022-11-12T20:00:34.820Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T20:00:34.820Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T20:00:35.300Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-    at RetryOperation._fn (C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[error] 
-[error] Error: Failed to get Firebase project cv-builder-d5607. Please make sure the project exists and your account has permission to access it.
-[debug] [2022-11-12T20:00:57.238Z] ----------------------------------------------------------------------
-[debug] [2022-11-12T20:00:57.241Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-11-12T20:00:57.241Z] CLI Version:   11.16.0
-[debug] [2022-11-12T20:00:57.241Z] Platform:      win32
-[debug] [2022-11-12T20:00:57.242Z] Node Version:  v16.16.0
-[debug] [2022-11-12T20:00:57.243Z] Time:          Sat Nov 12 2022 23:00:57 GMT+0300 (Москва, стандартное время)
-[debug] [2022-11-12T20:00:57.244Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2022-11-12T20:00:57.249Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-12T20:00:57.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-12T20:00:57.369Z] > authorizing via signed-in user (mxsolopov@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  E:\Projects\Frontend\cv-builder\cv-builder-frontend
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[warn] !  Unable to fetch the CLI MOTD and remote config. 
-[debug] [2022-11-12T20:00:57.502Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2022-11-12T20:03:02.390Z] Using project from CLI flag: cv-builder-d5607
-[debug] [2022-11-12T20:03:02.392Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
-[debug] [2022-11-12T20:03:02.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
-[debug] [2022-11-12T20:03:02.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2022-11-12T20:03:02.563Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
-[debug] [2022-11-12T20:03:02.719Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+[debug] [2022-11-12T20:15:01.339Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-11-12T20:15:01.853Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions 403
+[debug] [2022-11-12T20:15:01.853Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cv-builder-d5607:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/cv-builder-d5607:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2022-11-12T20:15:01.853Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+[debug] [2022-11-12T20:15:01.855Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 [none]
+[debug] [2022-11-12T20:15:02.701Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 403
+[debug] [2022-11-12T20:15:02.701Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cv-builder-d5607 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/cv-builder-d5607</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2022-11-12T20:15:02.702Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+[debug] [2022-11-12T20:15:03.342Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
     at RetryOperation._fn (C:\Users\mxsol\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
 [error] 
